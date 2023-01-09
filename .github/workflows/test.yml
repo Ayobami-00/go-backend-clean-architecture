@@ -27,7 +27,7 @@ jobs:
           MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
           MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
         ports:
-          - ${DB_PORT}:${DB_PORT}
+          - 27017:27017
         options: >-
           --health-cmd mongo
           --health-interval 10s
